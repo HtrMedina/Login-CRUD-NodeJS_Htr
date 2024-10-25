@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-5 offset-md-3">
+            <div class="card card-body bg-dark p-4 text-white rounded-0">
+                <h1>Editar Clientes</h1>
+                <form action="/clients/edit/{{client._id}}" method="POST">
+                    <div class="mb-3">
+                        <label for="name">Nombre</label>
+                        <input type="text" name="name" placeholder="Ingresa un nombre" 
+                        value="{{client.name}}" class="form-control rounded-0 bg-dark text-white">
+                    </div>
+                    <div class="mb-3">
+                        <label for="address">Direccion</label>
+                        <input type="text" name="address" placeholder="Ingresa una direccion" 
+                        value="{{client.address}}" class="form-control rounded-0 bg-dark text-white">
+                    </div>
+                    <div class="mb-3">
+                        <label for="postalCode">Codigo Postal</label>
+                        <input type="text" name="postalCode" placeholder="Ingresa un codigo postal" 
+                        value="{{client.postalCode}}" class="form-control rounded-0 bg-dark text-white">
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone">Telefono</label>
+                        <input type="text" name="phone" placeholder="Ingresa un telefono" 
+                        value="{{client.phone}}" class="form-control rounded-0 bg-dark text-white">
+                    </div>
+
+                    <button class="btn btn-outline-success btn-sm mt-2">Guardar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
